@@ -102,7 +102,15 @@ export function ChatMessage({ role, content, chartData, chartType }: ChatMessage
                 <Cell key={`cell-${index}`} fill={entry.fill} />
               ))}
             </Pie>
-            <Tooltip formatter={(value) => `${value}%`} />
+            <Tooltip 
+              formatter={(value) => `${value}%`}
+              contentStyle={{
+                backgroundColor: 'hsl(var(--popover))',
+                border: '1px solid hsl(var(--border))',
+                borderRadius: '8px',
+                color: 'hsl(var(--popover-foreground))'
+              }}
+            />
           </PieChart>
         </ResponsiveContainer>
       );
@@ -113,10 +121,17 @@ export function ChatMessage({ role, content, chartData, chartType }: ChatMessage
         <ResponsiveContainer width="100%" height={height}>
           <BarChart data={chartData}>
             <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
-            <XAxis dataKey="month" className="text-sm" />
-            <YAxis className="text-sm" />
-            <Tooltip />
-            <Bar dataKey="complaints" fill="#FE5C66" label={{ position: 'top' }} />
+            <XAxis dataKey="month" className="text-sm" stroke="hsl(var(--muted-foreground))" />
+            <YAxis className="text-sm" stroke="hsl(var(--muted-foreground))" />
+            <Tooltip 
+              contentStyle={{
+                backgroundColor: 'hsl(var(--popover))',
+                border: '1px solid hsl(var(--border))',
+                borderRadius: '8px',
+                color: 'hsl(var(--popover-foreground))'
+              }}
+            />
+            <Bar dataKey="complaints" fill="hsl(var(--primary))" label={{ position: 'top', fill: 'hsl(var(--foreground))' }} />
           </BarChart>
         </ResponsiveContainer>
       );

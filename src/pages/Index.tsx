@@ -138,7 +138,7 @@ const Index = () => {
       
       <main className="flex-1 flex flex-col">
         {/* Header */}
-        <header className="h-16 border-b border-border bg-card px-10 flex items-center justify-between">
+        <header className="h-16 border-b border-border bg-card px-5 flex items-center justify-between">
           <h2 className="text-lg font-medium text-foreground">
             {currentTitle}
           </h2>
@@ -150,7 +150,7 @@ const Index = () => {
           ref={messagesContainerRef}
           className="flex-1 overflow-y-auto"
         >
-          <div className="px-10 py-8 space-y-6 max-w-[900px] mx-auto">
+          <div className="px-5 py-8 space-y-6 max-w-[900px] mx-auto">
             {messages.map((message, index) => (
               <ChatMessage
                 key={index}
