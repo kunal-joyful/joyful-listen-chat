@@ -60,7 +60,47 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  /* Dark mode disabled for Joyful Listen */
+  .dark {
+    /* Dark mode colors for Joyful Listen */
+    --background: 264 13% 12%; /* Dark charcoal */
+    --foreground: 43 36% 95%; /* Off white for text */
+
+    --card: 264 13% 16%; /* Slightly lighter than background */
+    --card-foreground: 43 36% 95%;
+
+    --popover: 264 13% 16%;
+    --popover-foreground: 43 36% 95%;
+
+    --primary: 356 99% 68%; /* Coral Red - same */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 264 13% 20%; /* Darker grey */
+    --secondary-foreground: 43 36% 95%;
+
+    --muted: 264 13% 18%; /* Dark muted */
+    --muted-foreground: 43 36% 70%;
+
+    --accent: 356 99% 68%; /* Coral accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 264 13% 25%; /* Darker border */
+    --input: 264 13% 18%; /* Dark input */
+    --ring: 356 99% 68%;
+
+    --coral-super-light: 356 99% 25%; /* Darker coral for hovers */
+
+    --sidebar-background: 264 13% 14%;
+    --sidebar-foreground: 43 36% 95%;
+    --sidebar-primary: 43 36% 95%;
+    --sidebar-primary-foreground: 264 13% 14%;
+    --sidebar-accent: 264 13% 20%;
+    --sidebar-accent-foreground: 43 36% 95%;
+    --sidebar-border: 264 13% 20%;
+    --sidebar-ring: 356 99% 68%;
+  }
 }
 
 @layer base {
